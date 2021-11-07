@@ -1,11 +1,11 @@
 fn main() {
-    let time = printTrafficTime(Red);
+    let mut time = printTrafficTime(Red);
     println!("Now is red light, please wait {} seconds.", time);
 
-    printTrafficTime(Yellow);
+    time = printTrafficTime(Yellow);
     println!("Now is yellow light, please wait {} seconds.", time);
 
-    printTrafficTime(Green);
+    time = printTrafficTime(Green);
     println!("Now is green light, please wait {} seconds.", time);
 }
 
